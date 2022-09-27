@@ -9,10 +9,13 @@
     margin: 0 auto;
 }
 .nav{
-    background-color: black;
+    background-color: rgb(56, 55, 55);
     position: fixed;
     width: 100%;
     z-index: 100;
+}
+h1>span{
+    color:tomato;
 }
 .nav-bar{
     display: flex;
@@ -22,7 +25,7 @@
  
 }
 .nav-bar h1{
-    font-size: 30px;
+    font-size: 35px;
 }
 .nav-sec ul li{
     display: inline-block;
@@ -34,11 +37,11 @@
     content: "";
     display: block;
     width: 0%;
-    height: 3px;
+    height: 4px;
     position:absolute;
-    background-color: white;
+    background-color:tomato;
     transition: all 0.5s ease;
-    margin-top: 5px;
+    margin-top: 7px;
     
 }
 .nav-sec ul li:hover:after{
@@ -106,13 +109,13 @@
     transition: all 0.5s;
 }
 .icon .facebook:hover i{
-    color:#1F618D ;
+    color:#2B1F8D ;
 } 
 .icon .insta:hover i{
     color: brown;
 }
 .icon .twitter:hover i{
-    color: rgb(88, 149, 227);
+    color: #5FB8FE;
 }
 /* banner ends */
 
@@ -126,14 +129,15 @@
     font-size: 30px;
     position: relative;
     display: inline;
+    color: #555555;
 }
 .about-head h1:before{
     content: "";
     width: 0%;
-    height: 3px;
+    height: 5px;
     top:60%;
     position: absolute;
-    background-color: #1F618D;
+    background-color: tomato;
     transition: all 0.2s;
     transform-origin: left;
     margin-top: 5px;
@@ -147,13 +151,14 @@
     width: 100%;
     display: flex;
     padding-top: 30px;
-    height: 800px;
+    height: 600px;
     padding-bottom: 50px;
+    position: relative;
 }
 .box1{
     width: 50%;
-   
-    padding-right: 10px;
+   height: 100%;
+    margin-right: 20px;
     overflow: hidden;
     border-radius: 10px;
    
@@ -164,7 +169,7 @@
 }
 .box2{
     width: 50%;
-    background-color: #1F618D;
+   
 }
 .box1:hover img{
     transform: scale(1.1);
@@ -173,17 +178,62 @@
 .box-icon a{
     text-decoration: none;
 }
+.box-icon{
+    position: absolute;
+    display: flex;
+    top: 450px;
+    left: 100px;
+    right: 0;
+    transform: translateY(0px);
+    transition: all 0.5s;
+    opacity: 0;
+   
+}
 .box-icon div{
     width: 50px;
     height: 50px;
-    background-color: #1F618D;
-    margin: 0px 5px;
-    display: flex;
+    background-color:#fafafa ;
+    margin: 0px 10px;
     border-radius: 100%;
     text-align: center;
     line-height: 50px;
+   
+}
+.box1:hover .box-icon{
+    transform: translateY(-10px);
+    transition: all 0.5s;
+    opacity: 100%;
 }
 .box-icon div i{
-    color: white;
+    color:#555555;
+    font-size: 23px;
+}
+.box-icon div:hover{
+    background-color: #ececec;
+}
+.box-icon .facebook:hover i{
+    color:#2B1F8D ;
+} 
+.box-icon .insta:hover i{
+    color: rgb(232, 31, 31);
+}
+.box-icon .twitter:hover i{
+    color: #85C1E9
+}
+.box-icon .linkedin:hover i{
+    color: #1376d2;
+}
+.box2{
+    line-height: 50px;
+    text-align: justify;
+    margin-left: 100px;
+    padding-top: 40px;
+}
+.box2 p{
+    font-size: 17px;
+}
+.box2 p i{
+    color: #1376d2;
+    margin-right: 10px;
 }
 /* about ends */
