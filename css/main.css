@@ -87,7 +87,7 @@ h1>span{
 .icon div{
     width: 50px;
     height: 50px;
-    margin: 0px 10px;
+    margin: 0px 15px;
     background-color: rgb(71, 72, 72);
     border-radius: 100%;
     line-height: 50px;
@@ -96,6 +96,10 @@ h1>span{
 }
 .icon div>a{
     text-decoration: none;
+}
+.icon div:hover{
+    transform: translateY(-20px);
+    transition: all 0.5s;
 }
 .icon div i{
     color: rgb(224, 224, 230);
@@ -237,3 +241,103 @@ h1>span{
     margin-right: 10px;
 }
 /* about ends */
+
+/* logo starts */
+.overall-logo{
+    display: flex;
+    width: 100%;
+    height: 70%;
+}
+.logos{
+    background-color:#5FB8FE;
+    margin-bottom: 50px;
+}
+.overall-logo >div{
+    width: 25%;
+    padding: 50px 0px;
+    transition: 0.5s;
+ 
+}
+.overall-logo >div:hover{
+    transform: translateY(-20px);
+    
+    transition: 0.5s;
+}
+.overall-logo >div img{
+    width: 60%;
+    border-radius: 100%;
+    box-shadow:0 0 30px white;
+}
+/* logo ends */
+
+/* skills sec starts */
+.skils{
+padding-top: 50px;
+}
+.overall-skill{
+    width: 100%;
+    display: flex;
+}
+.part-1{
+    width: 60%;
+    line-height: 30px;
+    margin-right: 20px;
+}
+.part-1 > div{
+    padding-top: 15px;
+}
+.part-1 > div label{
+    font-size: 20px;
+    color: #353535;
+}
+.part-1 progress{
+    border-radius: 0;
+    width: 100%;
+    background: #ececec; 
+}
+.part-1 progress::-webkit-progress-value {
+    background:#1376d2;
+  }
+.part-2{
+    width: 40%;
+    
+}
+.part-2 .img{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ececec;
+    
+}
+.part-2 .detail{
+    width:50%;
+    background-color: #555555;
+    text-align: center;
+}
+.part-2 .img img{
+    width: 50%;
+
+    border-radius: 100%;
+  
+} 
+.radio{
+    padding-top: 20px;
+}
+.radio > input{
+    margin-left: 5px;
+}
+#btn1,#btn2{
+    display: none;
+    width: 100px;
+    height: 40px;
+    background-color:#58D68D ;
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+
+}
+/* skill sec ends */
