@@ -323,6 +323,10 @@ padding-top: 50px;
     border-radius: 100%;
   
 } 
+.part-2 .img:hover img{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
 .radio{
     padding-top: 20px;
 }
